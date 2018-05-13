@@ -53,11 +53,32 @@ p{
 .collapse>.navbar-nav>.nav-item{
   padding-left: 40px;
   font-size: 18px;
+  color:black;
+  box-sizing: border-box;
+  transition: 1s;
+}
+.navbar>.navbar-toggler{
+  border-color: black;
+  border-radius: 0;
+}
+.navbar>.navbar-toggler>.navbar-toggler-icon{
+  background-image: url('../img/burger-menu.png');
+  background-size: 23px;
+}
+.collapse>.navbar-nav>.nav-item.fadeIn{
+  color: rgba(0,0,0,.5);
 }
 .navbar{
   animation-duration: 1s;
   animation-name: fadeInDown;
+  transition: 1s;
+}
+header>.navbar{
+  background-color: rgba(248,249,250,0)!important;
+}
+header>.navbar.fadeIn{
   border-bottom: 1px solid black;
+  background-color: rgba(248,249,250,1)!important;
 }
 @-webkit-keyframes fadeInDown {
   from {
@@ -167,16 +188,13 @@ p{
 }
 #about-me-p-two{
   font-size: 20px;
-  grid-area: 5 / 2 / 7 / 2;
+  grid-area: 5 / 2 / 6 / 2;
 }
 .progress-bar-div{
   grid-area: 2 / 4 / 6 / 4;
   display: flex;
   flex-direction: column;
   justify-content: center;
-}
-.progress-bar-div>.progress{
-
 }
 .progress-bar-text{
   margin-top: 2%;
@@ -297,4 +315,7 @@ footer{
 }
 .form-group>.form-control{
   border-radius: 0;
+}
+.form-group>.form-control:hover{
+  border-color: black;
 }
