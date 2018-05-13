@@ -18,31 +18,13 @@ $('.navbar-brand[href^="#"]').on('click', function(event) {
     }
 });
 
-/*$(window).on('scroll', function(){
-  if($(window).scrollTop()){
+$(window).on('scroll', function(){
+  if($(window).scrollTop()>200){
     $('nav').addClass('fadeIn');
     $('nav-item').addClass('fadeIn');
   }
   else{
     $('nav').removeClass('fadeIn');
-    $('nav-item').addClass('fadeIn');
+    $('nav-item').removeClass('fadeIn');
   }
-})*/
-
-(function($) {
-    var ctrl = new ScrollMagic.Controller({
-        globalSceneOptions: {
-            triggerHook: 'onLeave'
-        }
-    });
-})(jQuery);
-
-$("section").each(function() {
-
-   new ScrollMagic.Scene({
-       triggerElement: this
-   })
-   .setPin(this)
-   .addTo(ctrl);
-
-});
+})
