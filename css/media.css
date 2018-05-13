@@ -53,7 +53,7 @@
 }
 @media screen and (max-width : 380px) {
   #main{
-    height: 560px;
+    height: 600px;
   }
   #main-div{
     font-size: 30px;
