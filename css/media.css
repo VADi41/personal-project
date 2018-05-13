@@ -1,0 +1,122 @@
+@media screen and (max-width : 1024px) {
+  #about-me{
+    grid-template-rows: 10% 7% 10% 1fr 1fr 1fr 10%;
+    grid-template-columns: 10% 1fr 10%;
+  }
+  .progress-bar-div{
+    grid-area: 6 / 2 / 7 / 3;
+  }
+  #projects{
+    height: 800px;
+    grid-template-rows: 9% 6% 9% 1fr;
+  }
+}
+@media screen and (max-width : 900px) {
+  #projects{
+    height: 700px;
+    grid-template-rows: 10% 7% 10% 1fr;
+  }
+  #contacts{
+    height: 1000px;
+    grid-template-rows: 9% 7% 7% 1fr 1fr;
+    grid-template-columns: 10% 1fr 10%;
+  }
+  .contacts-form{
+    grid-area: 5 / 2 / 6 / 3;
+  }
+}
+@media screen and (max-width : 780px) {
+  #about-me-p-one{
+    font-size: 18px;
+  }
+  #about-me-p-two{
+    font-size: 18px;
+  }
+}
+@media screen and (max-width : 470px) {
+  #contacts-p-number{
+    font-size: 18px;
+  }
+  #contacts-p-mail{
+    font-size: 18px;
+  }
+  #contacts-p-github{
+    font-size: 18px;
+  }
+  #contacts-p-map{
+    font-size: 18px;
+  }
+  .form-submit>.btn{
+    width: 100%;
+    border-radius: 0;
+  }
+}
+@media screen and (max-width : 380px) {
+  #main{
+    height: 560px;
+  }
+  #main-div{
+    font-size: 30px;
+  }
+  #about-me{
+    grid-template-rows: 5% 5% 5% 1fr 1fr 1fr 5%;
+  }
+  #about-me-p{
+    font-size: 30px;
+  }
+  #about-me-p-one{
+    font-size: 15px;
+  }
+  #about-me-p-two{
+    font-size: 15px;
+  }
+  #projects{
+    height: 350px;
+    grid-template-rows: 10% 10% 12% 1fr;
+  }
+  #projects-p{
+    font-size: 30px;
+  }
+  #progress-bar-div{
+    justify-content: flex-start;
+  }
+  #contacts{
+    height: 800px;
+    grid-template-rows: 5% 7% 5% 0.5fr 1fr;
+  }
+  #contacts-p{
+    font-size: 30px;
+  }
+  .contacts-div{
+    grid-template-rows: 35px 35px 35px 34px;
+    grid-template-columns: 35px 1fr;
+    grid-row-gap: 25px;
+  }
+  #contacts-p-number{
+    font-size: 15px;
+  }
+  #contacts-img-number{
+    width: 35px;
+  }
+  #contacts-p-mail{
+    font-size: 15px;
+  }
+  #contacts-img-mail{
+    width: 35px;
+  }
+  #contacts-p-github{
+    font-size: 15px;
+  }
+  #contacts-img-github{
+    width: 35px;
+  }
+  #contacts-p-map{
+    font-size: 15px;
+  }
+  #contacts-img-map{
+    width: 35px;
+  }
+  .contacts-form{
+    margin-top: 25px;
+  }
+}
