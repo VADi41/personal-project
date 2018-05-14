@@ -7,7 +7,6 @@ $('.nav-item[href^="#"]').on('click', function(event) {
         }, 1000);
     }
 });
-
 $('.navbar-brand[href^="#"]').on('click', function(event) {
     var target = $(this.getAttribute('href'));
     if( target.length ) {
@@ -17,7 +16,6 @@ $('.navbar-brand[href^="#"]').on('click', function(event) {
         }, 1000);
     }
 });
-
 $(window).on('scroll', function(){
   if($(window).scrollTop()>200){
     $('nav').addClass('fadeIn');
@@ -28,3 +26,9 @@ $(window).on('scroll', function(){
     $('nav-item').removeClass('fadeIn');
   }
 })
+var $progressAnim = $('#about-me');
+$progressAnim.waypoint(function(){
+  $('.progress-html').addClass('anim');
+  $('.progress-css').addClass('anim');
+  $('.progress-js').addClass('anim');
+}, {offset:'50%'})
