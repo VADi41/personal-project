@@ -9,21 +9,22 @@
       <link rel="stylesheet" href="css/media.css">
       <link rel="icon" href="img/vz-icon.svg" type="image/x-icon">
       <link rel="shortcut icon" href="img/vz-icon.svg" type="image/x-icon">
-      <link href="https://fonts.googleapis.com/css?family=Gothic+A1" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Gothic+A1:400,900" rel="stylesheet">
+      <link href="https://fonts.googleapis.com/css?family=Montserrat:400,900" rel="stylesheet">
       <title>Vadym Zaderatskyi</title>
    </head>
    <body>
       <header>
-         <nav class="navbar fixed-top navbar-expand-sm navbar-light bg-light">
+         <nav class="navbar fixed-top navbar-expand-md navbar-light bg-light">
             <a class="navbar-brand" href="#main">Vadym Zaderatskyi</a>
             <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
                <div class="navbar-nav">
-                  <a class="nav-item nav-link" href="#about-me">About me</a>
-                  <a class="nav-item nav-link" href="#projects">Projects</a>
-                  <a class="nav-item nav-link" href="#contacts">Contacts</a>
+                  <a class="nav-item nav-link" href="#about-me-par">About me</a>
+                  <a class="nav-item nav-link" href="#projects-par">Projects</a>
+                  <a class="nav-item nav-link" href="#contacts-par">Contacts</a>
                </div>
             </div>
          </nav>
@@ -35,12 +36,15 @@
                <p id="main-p-two">Vadym.</p>
                <p id="main-p-three">I am web developer.</p>
             </div>
-            <div class="main-img">
-              <img src="img/mf-avatar.svg" alt="" id="main-img">
-            </div>
+         </section>
+         <section id="learn-more">
+            <p id="learn-more-p">Learn more about what i can do</p>
+            <div class="arrow"></div>
+         </section>
+         <section id="about-me-par" class="parallax-window" data-parallax="scroll" data-image-src="img/about-me-par.png">
+           <p id="about-me-p">About me</p>
          </section>
          <section  id="about-me">
-            <p id="about-me-p">About me</p>
             <p id="about-me-p-one">
                Lorem ipsum dolor sit amet, consectetur adipiscing
                elit, sed do eiusmod tempor incididunt ut labore et
@@ -74,8 +78,10 @@
                </div>
             </div>
          </section>
+         <section id="projects-par" class="parallax-window" data-parallax="scroll" data-image-src="img/projects-par.png">
+           <p id="projects-p">Projects</p>
+         </section>
          <section id="projects">
-            <p id="projects-p">Projects</p>
             <div class="container">
                <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                   <ol class="carousel-indicators">
@@ -106,7 +112,7 @@
                      <div class="carousel-item">
                         <img class="d-block w-100" src="img/slider-github.png" alt="Fourth project">
                         <div class="carousel-caption d-none d-block">
-                           <a role="button" class="btn btn-outline-dark btn-sm" href="#">Go to see other projects</a>
+                           <a role="button" class="btn btn-outline-dark btn-sm" href="https://github.com/VADi41" target="_blank">Go to see other projects</a>
                         </div>
                      </div>
                   </div>
@@ -121,17 +127,21 @@
                </div>
             </div>
          </section>
-         <section id="contacts">
+         <section id="contacts-par" class="parallax-window" data-parallax="scroll" data-image-src="img/about-me-par.png">
             <p id="contacts-p">Contacts</p>
+         </section>
+         <section id="contacts">
             <div class="contacts-div">
                <img src="img/icon-phone.png" alt="" id="contacts-img-number">
                <p id="contacts-p-number">+380 93 841 68 81</p>
                <img src="img/icon-mail.png" alt="" id="contacts-img-mail">
                <p id="contacts-p-mail">vadim.zaderatskyi@gmail.com</p>
                <img src="img/icon-github.png" alt="" id="contacts-img-github">
-               <a href="" id="contacts-p-github">GitHub</a>
+               <a href="https://github.com/VADi41" target="_blank" id="contacts-p-github">GitHub</a>
                <img src="img/icon-map.png" alt="" id="contacts-img-map">
                <p id="contacts-p-map">Urkaine, Lviv</p>
+               <img src="img/icon-linkedin.png" alt="" id="contacts-img-linkedin">
+               <a href="https://www.linkedin.com/in/vadim-zaderatskyi-4aa049163/" target="_blank" id="contacts-p-linkedin">LinkedIn</a>
             </div>
             <form class="contacts-form" method="POST" action="https://tranquil-sierra-86540.herokuapp.com/benyalex5@gmail.com">
                <div class="form-group">
@@ -154,12 +164,11 @@
       </main>
       <footer>
       </footer>
-      <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
-      <script src="js/parallax.js"></script>
       <script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
       <script src="js/jquery.waypoints.min.js"></script>
       <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
       <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js" integrity="sha384-smHYKdLADwkXOn1EmN1qk/HfnUcbVRZyYmZ4qpPea6sjB/pTJ0euyQp0Mk8ck+5T" crossorigin="anonymous"></script>
+      <script src="js/parallax.js"></script>
       <script src="js/index.js"></script>
    </body>
 </html>

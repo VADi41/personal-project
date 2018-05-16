@@ -19,11 +19,13 @@ $('.navbar-brand[href^="#"]').on('click', function(event) {
 $(window).on('scroll', function(){
   if($(window).scrollTop()>200){
     $('nav').addClass('fadeIn');
-    $('nav-item').addClass('fadeIn');
+    $('.nav-item').addClass('fadeIn');
+    $('.navbar-brand').addClass('fadeIn');
   }
   else{
     $('nav').removeClass('fadeIn');
-    $('nav-item').removeClass('fadeIn');
+    $('.nav-item').removeClass('fadeIn');
+    $('.navbar-brand').removeClass('fadeIn');
   }
 })
 var $progressAnim = $('#about-me');
